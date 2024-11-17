@@ -1,3 +1,6 @@
+## Run
+Phải sử dụng Live Server
+
 ## general.css 
 file này để dùng các css chung như button, font-family
 
