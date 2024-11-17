@@ -1,0 +1,52 @@
+body {
+  background-color: #68D4FF;
+}
+
+.welcome-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 110px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  border-bottom: 4px solid #24befb;
+  padding-left: 95px;
+  padding-right: 115px;
+  background-color: white;
+}
+
+.logo {
+  width: 294px;
+  height: 76px;
+  object-fit: cover;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  margin: 180px auto 180px auto;
+
+  background-color: white;
+  width: 700px;
+  height: 630px;
+  border-radius: 20px;
+}
+
+button {
+  width: 485px;
+  height: 85px;
+  background-color: #009AF3;
+  color: white;
+  font-size: 50px;
+  border: none;
+  border-radius: 50px;
+  margin-top: 50px;
+  cursor: pointer;
+}

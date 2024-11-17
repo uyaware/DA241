@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Roboto';
+}
+
+button {
+  cursor: pointer;
+  transition: filter 0.2s ease, transform 0.2s, box-shadow 0.2;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+button:hover {
+  filter: brightness(1.2);
+}
+
+button:active {
+  filter:brightness(1.4);
+  transform: translateX(5px) translateY(5px);
+  box-shadow: none;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../../fonts/Lato-Heavy.eot');
+  src: url('../../fonts/Lato-Heavy.eot?#iefix') format('embedded-opentype'),
+      url('../../fonts/Lato-Heavy.woff2') format('woff2'),
+      url('../../fonts/Lato-Heavy.woff') format('woff'),
+      url('../../fonts/Lato-Heavy.ttf') format('truetype'),
+      url('../../fonts/Lato-Heavy.svg#Lato-Heavy') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* Khi kích thước màn hình nhỏ hơn 992px */
+@media (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Khi kích thước màn hình nhỏ hơn 768px */
+@media (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+/* Khi kích thước màn hình nhỏ hơn 576px */
+@media (max-width: 576px) {
+  html {
+    font-size: 8px;
+  }
+}
+
