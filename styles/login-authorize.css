@@ -1,0 +1,17 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+ 
+  border-bottom: 4px solid #24befb;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: white;
+}
+
+.logo {
+  width: 300px;
+  object-fit: cover;
+}
