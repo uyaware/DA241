@@ -2,41 +2,46 @@ body {
   background-color: #68D4FF;
 }
 
-.welcome-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 110px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  
-  border-bottom: 4px solid #24befb;
-  padding-left: 95px;
-  padding-right: 115px;
-  background-color: white;
-}
-
-.logo {
-  width: 294px;
-  height: 76px;
-  object-fit: cover;
-}
-
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   
-  margin: 180px auto 180px auto;
+  margin: 140px auto;
 
   background-color: white;
   width: 700px;
   height: 630px;
   border-radius: 20px;
+}
+
+.login-header {
+  position: relative;
+  top: -70px;
+  z-index: 0;
+
+  text-align: center;
+}
+
+.logo-container {
+  width: 535px;
+  border-bottom: 3px solid black;
+  margin-bottom: 30px;
+}
+
+.logo-login {
+  width: 400px;
+  height: 112px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  font-size: 36px;
+  margin: 0 auto;
 }
 
 button {
@@ -47,6 +52,6 @@ button {
   font-size: 50px;
   border: none;
   border-radius: 50px;
-  margin-top: 50px;
+  margin-bottom: 50px;
   cursor: pointer;
 }
