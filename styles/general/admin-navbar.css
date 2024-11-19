@@ -18,9 +18,11 @@
 
 .admin-navbar-middle {
   flex: 1;
+  max-width: 900px;
+  min-width: 500px;
 
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   align-items: stretch;
 
@@ -34,10 +36,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  width: 260px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
 
   font-size: 36px;
   text-decoration: none;
