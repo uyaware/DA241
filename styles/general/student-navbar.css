@@ -1,4 +1,4 @@
-.admin-navbar {
+.student-navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -16,7 +16,7 @@
   z-index: 99;
 }
 
-.admin-navbar-middle {
+.student-navbar-middle {
   flex: 1;
   max-width: 990px;
   min-width: 500px;
@@ -31,7 +31,7 @@
   padding-right: 30px;
 }
 
-.admin-navbar-middle-printer, .admin-navbar-middle-queue, .admin-navbar-middle-history {
+.student-navbar-middle-print, .student-navbar-middle-buy, .student-navbar-middle-history {
   color: black;
   display: flex;
   align-items: center;
@@ -45,7 +45,7 @@
   text-align: center;
 }
 
-.admin-navbar-right {
+.student-navbar-right {
   width: 190px;
   display: flex;
   flex-direction: row;
