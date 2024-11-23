@@ -14,6 +14,11 @@ body {
   margin-bottom: 100px;
 }
 
+::selection{
+  color: #fff;
+  background: #6990F2;
+}
+
 button {
   cursor: pointer;
   transition: filter 0.2s ease, transform 0.2s, box-shadow 0.2;
@@ -22,11 +27,11 @@ button {
 }
 
 button:hover {
-  filter: brightness(1.2);
+  filter: brightness(1.1);
 }
 
 button:active {
-  filter:brightness(1.4);
+  filter:brightness(1.2);
   transform: translateX(5px) translateY(5px);
   box-shadow: none;
 }
