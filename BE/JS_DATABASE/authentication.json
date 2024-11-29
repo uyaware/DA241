@@ -1,0 +1,20 @@
+[
+    {
+        "user_name": "admin_1",
+        "password": "1",
+        "role": "admin",
+        "Name" : "Admin Khoa"
+    },
+    {
+        "user_name": "user_1",
+        "password": "1",
+        "role": "student",
+        "Name" : "Nguyễn Quang Niên",
+        "id" : "2211040",
+        "printing_log" : [
+            {
+                
+            }
+        ]
+    }
+]

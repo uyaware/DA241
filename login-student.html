@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Học sinh đăng nhập</title>
+    <title>Student đăng nhập</title>
     <link rel="stylesheet" href="styles/general/login-navbar.css">
     <link rel="stylesheet" href="styles/general/general.css">
     <link rel="stylesheet" href="styles/login-sutdent.css">
@@ -22,7 +22,7 @@
         <div class="input-group">
           <label for="username">Tên đăng nhập
           </label>
-          <input id="username" type="text" placeholder="uyaware@hcmut.edu.vn">
+          <input id="username" type="text" placeholder="uyaware@hcmut.edu.vn" autocomplete="off">
         </div>
 
         <div class="input-group">
@@ -39,12 +39,36 @@
           <a class="forget" href="">Quên mật khẩu?</a>
         </div>
         
-        <a href="">
-          <button class="submit-button" type="submit">Đăng nhập</button>
-        </a>
+        <button class="submit-button" type="button" onclick="login()">Đăng nhập</button>
+        
       </form>
     </div>
 
     <script src="scripts/general/login-navbar.js"></script>
   </body>
+
+  <script>
+    function login() {
+        const userName = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        fetch(`http://localhost:18000/std_sign_in?user_name=${userName}&password=${password}`)
+            .then(response => {
+                console.log('Response status:', response.status); // Log status
+                if (response.ok) {
+                  window.location.href = "student-print-home.html";
+                    return response.text();
+                } else {
+                    throw new Error('Invalid username or password');
+                }
+            })
+            .then(data => {
+                alert(data);
+            })
+            .catch(error => {
+                console.error('Error:', error.message);
+                alert(error.message);
+            });
+    }
+</script>
 </html>
