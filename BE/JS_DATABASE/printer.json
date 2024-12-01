@@ -1,72 +1,66 @@
 [
     {
         "model": "Canon 3301",
-        "id": "CN_23456",
+        "id": "CN_23458",
         "location": "H3-301",
         "weight": "250kg",
-        "status": "Hoạt động"
+        "status": "Hoạt động",
+        "num_paper": "199"
     },
     {
         "model": "Canon 3301",
-        "id": "CN_23456",
+        "id": "CN_23460",
         "location": "H3-301",
         "weight": "250kg",
-        "status": "Hoạt động"
+        "status": "Hoạt động",
+        "num_paper": "199"
     },
     {
         "model": "Canon 3301",
-        "id": "CN_23456",
+        "id": "CN_23462",
         "location": "H3-301",
         "weight": "250kg",
-        "status": "Hoạt động"
+        "status": "Hoạt động",
+        "num_paper": "199"
     },
     {
         "model": "Canon 3301",
-        "id": "CN_23456",
+        "id": "CN_23463",
         "location": "H3-301",
         "weight": "250kg",
-        "status": "Hoạt động"
+        "status": "Hoạt động",
+        "num_paper": "199"
     },
     {
         "model": "Canon 3301",
-        "id": "CN_23456",
+        "id": "CN_23464",
         "location": "H3-301",
         "weight": "250kg",
-        "status": "Hoạt động"
+        "status": "Hoạt động",
+        "num_paper": "199"
     },
     {
         "model": "Canon 3301",
-        "id": "CN_23456",
+        "id": "CN_23465",
         "location": "H3-301",
         "weight": "250kg",
-        "status": "Hoạt động"
+        "status": "Hoạt động",
+        "num_paper": "199"
     },
     {
-        "model": "Canon 3301",
-        "id": "CN_23456",
-        "location": "H3-301",
-        "weight": "250kg",
-        "status": "Hoạt động"
+        "model": "Dell GTM 302",
+        "id": "DE_11347",
+        "location": "H1-301",
+        "weight": "100kg",
+        "status": "Hoạt động",
+        "num_paper": "199"
     },
     {
-        "model": "Canon 3301",
-        "id": "CN_23456",
-        "location": "H3-301",
-        "weight": "250kg",
-        "status": "Hoạt động"
-    },
-    {
-        "model": "Canon 3301",
-        "id": "CN_23456",
-        "location": "H3-301",
-        "weight": "250kg",
-        "status": "Hoạt động"
-    },
-    {
-        "model": "Canon 3301",
-        "id": "CN_23456",
-        "location": "H3-301",
-        "weight": "250kg",
-        "status": "Hoạt động"
+        "model": "Asus AX 11",
+        "id": "A_AX 3095",
+        "location": "H3-103",
+        "weight": "300kg",
+        "status": "Không hoạt động",
+        "num_paper": "2000"
     }
 ]

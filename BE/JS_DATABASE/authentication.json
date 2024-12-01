@@ -13,7 +13,37 @@
         "id" : "2211040",
         "printing_log" : [
             {
-                
+                "time" : "2021-10-10 10:10:10",
+                "printer_id" : "A_AX 3095",
+                "file_name" : "file_1",
+                "num_page" : "10"
+            },
+            {
+                "time" : "2021-10-10 10:10:10",
+                "printer_id" : "A_AX 3095",
+                "file_name" : "file_99",
+                "num_page" : "99"
+            }
+        ]
+    },
+    {
+        "user_name": "user_1",
+        "password": "1",
+        "role": "student",
+        "Name" : "Nguyễn Quang Niên",
+        "id" : "2211040",
+        "printing_log" : [
+            {
+                "time" : "2021-10-10 10:10:10",
+                "printer_id" : "A_AX 3095",
+                "file_name" : "file_1",
+                "num_page" : "10"
+            },
+            {
+                "time" : "2021-10-10 10:10:10",
+                "printer_id" : "A_AX 3095",
+                "file_name" : "file_99",
+                "num_page" : "99"
             }
         ]
     }

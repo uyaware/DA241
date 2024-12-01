@@ -18,12 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('http://localhost:18000/num_of_paper')
         .then(response => response.json())
         .then(data => {
-            data.forEach(paper => {
-                document.getElementById('num_paper').textContent = parseInt(paper.number_of_paper);
-                //console.log('Number Of paper : ' + parseInt(paper.number_of_paper));
-            });
+            document.getElementById('num_paper').textContent = parseInt(data.num_paper);
         })
-        .catch(error => console.error('Error fetching paper number:', error));
+        .catch(error => console.error('Error fetching paper data:', error));
 });
 
 var printer_id = '';
@@ -52,7 +49,7 @@ function load_printer(model,id,location,weight,status){
 
 
 function Delete_Printer(id) {
-    console.log('Tới chơi : ' + id);
+
     fetch('http://localhost:18000/delete_printer', {
         method: 'POST',
         headers: {
@@ -69,4 +66,49 @@ function Delete_Printer(id) {
 
 function log(){
     console.log('log');
+}
+
+function add_new_printer(){
+    var printer_id = document.getElementById('id').value;
+    var printer_model = document.getElementById('model').value;
+    var printer_location = document.getElementById('location').value;
+    var printer_weight = document.getElementById('weight').value;
+    var printer_status = document.getElementById('add-toggle-button');
+    var number_of_paper = document.getElementById('paper').value;
+
+    if (printer_status.checked == true){
+        printer_status = "Không hoạt động";
+    }else{
+        printer_status = "Hoạt động";
+    }
+
+    if(number_of_paper == '' || number_of_paper < 0){
+        number_of_paper = 0;
+    }
+
+    if(printer_id == '' || printer_model == '' || printer_location == '' || printer_weight == ''){
+        alert('Vui lòng nhập đầy đủ thông tin');
+    }
+
+    var set_printer = {
+        model: printer_model,
+        id: printer_id,
+        location: printer_location,
+        weight: printer_weight,
+        status: printer_status,
+        num_paper : number_of_paper
+    };
+
+    fetch('http://localhost:18000/add_new_printer', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json', // Đảm bảo server nhận định dạng JSON
+        },
+        body: JSON.stringify(set_printer)  // Truyền id trong body của POST request
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log(data);  // In ra kết quả trả về từ server
+    })
+    .catch(error => console.error('Error deleting printer:', error));
 }

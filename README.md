@@ -1,5 +1,7 @@
 ## Run
-Phải sử dụng Live Server
+`Start server` : cd BE -> node server.js
+
+`Start FE` with LiveServer
 
 ## general.css 
 file này để dùng các css chung như button, font-family
