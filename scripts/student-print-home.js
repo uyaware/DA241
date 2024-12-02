@@ -6,15 +6,25 @@ form.addEventListener("click", () => {
   fileInput.click();
 });
 
+var get_file = false;
+
 fileInput.onchange = ({ target }) => {
-  let files = target.files;
+    let files = target.files;
   Array.from(files).forEach(file => {
     let fileName = file.name;
     if (fileName.length >= 14) {
       let splitName = fileName.split('.');
       fileName = splitName[0].substring(0, 15) + "... ." + splitName[1];
     }
+
+    if(get_file == false){
+    get_file = true;
     displayFile(fileName, file);
+    }else{
+      //replace the old file with the new file
+      uploadedArea.innerHTML = "";
+      displayFile(fileName, file);
+    }
   });
 };
 
@@ -28,9 +38,14 @@ function displayFile(name, file) {
                             <span class="size">${fileSize}</span>
                           </div>
                         </div>
-                        <img class="file-delete-button" src="images/icons/delete.png"></img>
+                        <img class="file-delete-button" src="images/icons/delete.png" onclick="remove_file()"></img>
                       </li>`;
   uploadedArea.insertAdjacentHTML("afterbegin", uploadedHTML);
+}
+
+function remove_file(){
+  uploadedArea.innerHTML = "";
+  get_file = false;
 }
 
 
